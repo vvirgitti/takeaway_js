@@ -5,8 +5,12 @@ describe("menu", function() {
   });
 
   it('can add a dish to the menu', function() {
-    menu.add({"ramen":8});
-    expect(menu.dishes).toEqual(2);
+    menu.addDish({"ramen":8});
+    expect(menu.numberDishes).toEqual(1);
+  });
+
+  it('has a list of dishes', function() {
+    expect(menu.listDishes).toEqual({"ramen":8, "sushi":10});
   });
 
 
