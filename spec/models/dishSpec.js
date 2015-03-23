@@ -7,6 +7,10 @@ describe("dish", function() {
     expect(dish.name).toEqual("ramen");
   });
 
+  it('has a price', function() {
+    expect(dish.price),toEqual(8);
+  });
+
 
 
 });
