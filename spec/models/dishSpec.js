@@ -1,4 +1,5 @@
 describe("dish", function() {
+  
   beforeEach(function() {
     dish = new Dish();
   });
@@ -8,7 +9,7 @@ describe("dish", function() {
   });
 
   it('has a price', function() {
-    expect(dish.price),toEqual(8);
+    expect(dish.price).toEqual(8);
   });
 
 
